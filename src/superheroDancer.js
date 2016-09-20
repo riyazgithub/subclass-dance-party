@@ -1,7 +1,6 @@
 var superheroDancer = function(top, left, timeBetweenSteps) {
   dancer.call(this, top, left, 100);
-  console.log(this+" "+top+" "+left);
-  // this.$node = $('<span class="superheroDancer"></span>'); 
+  this.$node.addClass('superheroDancer'); 
 };
 
 superheroDancer.prototype = Object.create(dancer.prototype);
