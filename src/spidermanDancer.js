@@ -1,6 +1,6 @@
 var spidermanDancer = function(top, left, timeBetweenSteps) {
   dancer.call(this, top, left, 100);
-  this.$node.addClass('spidermanDancer'); 
+  this.$node.addClass('spidermanDancer');
 };
 
 spidermanDancer.prototype = Object.create(dancer.prototype);
