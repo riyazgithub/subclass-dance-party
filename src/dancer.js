@@ -6,7 +6,8 @@ var dancer = function(top, left, timeBetweenSteps) {
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
   this.step();
-  // this.setPosition(top, left);
+  console.log(this+" In Base Class "+top+" "+left);
+  this.setPosition(top, left);
 
 
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
@@ -16,8 +17,7 @@ var dancer = function(top, left, timeBetweenSteps) {
 dancer.prototype.step = function() {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
-  // this.step();
-  console.log('Dancer Step getting called ');
+  // this.step()
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 //this.step().bind(this), 100
@@ -32,7 +32,7 @@ dancer.prototype.setPosition = function(top, left) {
     left: left
   };
   // this.setPosition(top, left);
-  debugger;
+  
   this.$node.css(styleSettings);
 };
 
