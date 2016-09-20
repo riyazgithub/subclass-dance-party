@@ -3,30 +3,45 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color: black;
+  background-color: #0C1C1C;
+  background-image: url('http://www.wallpapermade.com/images/wallpapers/originals/gotham-city-at-night-wallpaper-3248.jpg');
+  background-attachment: fixed;
   background-size: 100%;
-  font-size: 18px;
+  background-repeat: no-repeat;
 }
 body, a:link, a:visited, a:active{
-  color: black;
+  color: #FFFFF1;
+}
+.title, .addDancerButton{
+  padding:5px 12px;
+  text-align:center;
 }
 .title{
   font-weight: 400;
-  font-size: 28px;
-  font-family: 'Vollkorn', serif;
+  font-size: 36px;
+  font-family: 'Francois One', sans-serif;
 }
 .addDancerButton{
   font-size: 20px;
   font-family: 'BenchNine', sans-serif;
   text-decoration: none;
-}
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+  text-align: center;
 }
 .topbar{
   height:50px;
-  background-color: #525252;
+  background-color: #0C1C1C;
+}
+.deadpool-link:hover{
+  color: #AD1305;
+}
+.spiderman-link:hover{
+  color: #0E84D9;
+}
+.batman-link:hover{
+  color: #B5B5B5;
+}
+.captain-link:hover{
+  color: #FF1300;
 }
 .dancer{
   border:10px solid blue;
@@ -35,15 +50,32 @@ body, a:link, a:visited, a:active{
 }
 .batmanDancer{
   border:none;
-  background-image: url('http://avatarbox.net/avatars/img3/cartoon_batman_avatar_picture_62315.jpg');
-  height: 48px;
-  width: 48px;
+  background-image: url('src/images/batman.gif');
+  height: 252px;
+  width: 280px;
   position:absolute;
 }
 .spidermanDancer{
   border: none;
-  background-image: url('http://pixeljoint.com/files/icons/spiderman__r139761211.gif');
-  height: 48px;
-  width: 48px;
+  background-image: url('src/images/spiderman.gif');
+  height: 171px;
+  width: 179px;
   position:absolute;
+}
+.captainAmericaDancer{
+  border:none;
+  background-image: url('src/images/CaptainAmerica.gif');
+  height: 280px;
+  width: 252px;
+  position:absolute;
+}
+.deadpoolDancer{
+  border: none;
+  background-image: url('src/images/deadpool.gif');
+  height: 280px;
+  width: 252px;
+  position:absolute;
+}
+.deadpoolDancer:hover{
+  
 }

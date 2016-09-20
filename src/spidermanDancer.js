@@ -1,13 +1,13 @@
 var spidermanDancer = function(top, left, timeBetweenSteps) {
-  dancer.call(this, top, left, 100);
+  dancer.call(this, top, left);
   this.$node.addClass('spidermanDancer');
 };
 
 spidermanDancer.prototype = Object.create(dancer.prototype);
 spidermanDancer.prototype.constructor = spidermanDancer;
 
-spidermanDancer.prototype.step = function() {
+// spidermanDancer.prototype.step = function() {
   
-  dancer.prototype.step.call(this);
-  this.$node.toggle();
-};
+//   dancer.prototype.step.call(this);
+//   this.$node.toggle();
+// };
