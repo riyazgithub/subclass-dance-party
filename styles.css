@@ -3,35 +3,47 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color: black;
+  background-size: 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: black;
+}
+.title{
+  font-weight: 400;
+  font-size: 28px;
+  font-family: 'Vollkorn', serif;
+}
+.addDancerButton{
+  font-size: 20px;
+  font-family: 'BenchNine', sans-serif;
+  text-decoration: none;
 }
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
 .topbar{
-  height:32px;
-  background-color: #555;
-}
-.title{
-  background-color: #777;
+  height:50px;
+  background-color: #525252;
 }
 .dancer{
   border:10px solid blue;
   border-radius:10px;
   position:absolute;
 }
-.bouncyDancer{
-  border:10px solid green;
-  border-radius:10px;
+.batmanDancer{
+  border:none;
+  background-image: url('http://avatarbox.net/avatars/img3/cartoon_batman_avatar_picture_62315.jpg');
+  height: 48px;
+  width: 48px;
   position:absolute;
 }
-.superheroDancer{
-  border:10px solid red;
-  border-radius:10px;
+.spidermanDancer{
+  border: none;
+  background-image: url('http://pixeljoint.com/files/icons/spiderman__r139761211.gif');
+  height: 48px;
+  width: 48px;
   position:absolute;
 }
