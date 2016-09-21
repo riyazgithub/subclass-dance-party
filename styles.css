@@ -12,7 +12,8 @@ body{
 body, a:link, a:visited, a:active{
   color: #FFFFF1;
 }
-.title, .addDancerButton{
+.title, .addDancerButton,
+.line-up, .break-up{
   padding:5px 12px;
   text-align:center;
 }
@@ -21,7 +22,10 @@ body, a:link, a:visited, a:active{
   font-size: 36px;
   font-family: 'Francois One', sans-serif;
 }
-.addDancerButton{
+.addDancerButton,
+.line-up,
+.break-up,
+.pythogoras{
   font-size: 20px;
   font-family: 'BenchNine', sans-serif;
   text-decoration: none;
@@ -58,15 +62,15 @@ body, a:link, a:visited, a:active{
 .spidermanDancer{
   border: none;
   background-image: url('src/images/spiderman.gif');
-  height: 171px;
-  width: 179px;
+  height: 280px;
+  width: 252px;
   position:absolute;
 }
 .captainAmericaDancer{
   border:none;
-  background-image: url('src/images/CaptainAmerica.gif');
-  height: 280px;
-  width: 252px;
+  background-image: url('src/images/captainamerica.gif');
+  height: 196px;
+  width: 176px;
   position:absolute;
 }
 .deadpoolDancer{
@@ -76,6 +80,15 @@ body, a:link, a:visited, a:active{
   width: 252px;
   position:absolute;
 }
+.captainAmericaDancer:hover{
+  transform: scale3d(0.8, 2, 0.2);
+}
+.batmanDancer:hover{
+  transform: translate(100px, 200px);
+}
+.spidermanDancer:hover{
+  transform: rotate(90deg);
+}
 .deadpoolDancer:hover{
-  
+  transform: scaleX(3);
 }

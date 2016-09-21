@@ -35,3 +35,6 @@ dancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+dancer.prototype.breakUp = function() {
+  this.setPosition($('body').height() * Math.random(), $('body').width() * Math.random());
+};

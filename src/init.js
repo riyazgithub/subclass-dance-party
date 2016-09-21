@@ -27,7 +27,26 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    window.dancers.push(dancerMaker);
     $('body').append(dancerMaker.$node);
   });
+
+  $('.line-up').on('click', function(event) {
+    window.dancers.forEach(function(dancer) {
+      dancer.lineUp();
+    });
+  });
+
+  $('.break-up').on('click', function(event) {
+    window.dancers.forEach(function(dancer) {
+      dancer.breakUp();
+    });
+  });
+  $('.pythogoras').on('click', function(event) {
+    window.dancers.forEach(function(dancer) {
+      console.log( "Positions " + dancer.top + " " + dancer.left);
+    });
+  });
+
 });
 

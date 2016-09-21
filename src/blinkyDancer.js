@@ -1,5 +1,7 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   dancer.call(this, top, left);
+  this.top = top;
+  this.left = left;
   this.$node.addClass('deadpoolDancer');
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
@@ -25,3 +27,12 @@ makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 //   // other effects you can use on a jQuery-wrapped html tag.
 //   this.$node.toggle();
 // };
+
+makeBlinkyDancer.prototype.lineUp = function() {
+
+  var styleSettings = {
+    bottom: 0,
+    left: 0,
+  };
+  this.$node.css(styleSettings);
+};
