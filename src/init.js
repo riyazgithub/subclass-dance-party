@@ -18,11 +18,12 @@ $(document).ready(function() {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we're supposed to make
-    var dancerMakerFunction = window[dancerMakerFunctionName];
+    var dancerMakerFunction = window[dancerMakerFunctionName];  
+//    dancerMakerFunction = makeBlinkyDancer;
 
     // make a dancer with a random position
 
-    var dancerMaker = new dancerMakerFunction(
+    const dancerMaker = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
@@ -42,11 +43,5 @@ $(document).ready(function() {
       dancer.breakUp();
     });
   });
-  $('.pythogoras').on('click', function(event) {
-    window.dancers.forEach(function(dancer) {
-      console.log( "Positions " + dancer.top + " " + dancer.left);
-    });
-  });
-
 });
 
